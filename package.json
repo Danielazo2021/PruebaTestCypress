@@ -1,0 +1,19 @@
+{
+  "name": "proyectoqa",
+  "version": "1.0.0",
+  "description": "prueba de Dicsys",
+  "main": "index.js",
+  "scripts": {
+    "test": "open"
+  },
+  "keywords": [
+    "js",
+    "test",
+    "Testing"
+  ],
+  "author": "Daniel Grecco",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.1"
+  }
+}
