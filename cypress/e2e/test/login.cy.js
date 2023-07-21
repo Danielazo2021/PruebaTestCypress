@@ -8,6 +8,8 @@ describe('Login de la pag de la utn', () => {
     cy.visit('https://www.frc.utn.edu.ar');
   });
 
+  
+
   it('Logueo valido', () => {
     const login = new LoginPages();
     login.getInicioSesion().click();
@@ -19,14 +21,14 @@ describe('Login de la pag de la utn', () => {
   });
 
 
-it('Logueo Invalido', () => {
-  const login = new LoginPages();
-  login.getInicioSesion().click();
-  login.getTxtName().type("113493");
-  login.getSelect().select("tecnicatura");
-  login.getPassword().type("Winance+2");
-  login.getBtnEnviar().click();
+  it('Logueo Invalido', () => {
+    const login = new LoginPages();
+    login.getInicioSesion().click();
+    login.getTxtName().type("113493");
+    login.getSelect().select("tecnicatura");
+    login.getPassword().type("Winance+2");
+    login.getBtnEnviar().click();
 
-});
+  });
 
 });
